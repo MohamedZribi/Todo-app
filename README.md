@@ -1,6 +1,4 @@
 # Todo-app
 
-This is a simple ToDo app developed with Django.
+This is a simple ToDo app developed with Django. Styled with CSS.
 
-
-okay Updating!
