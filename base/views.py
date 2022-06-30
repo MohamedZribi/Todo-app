@@ -1,4 +1,5 @@
 import imp
+from turtle import title
 from django.shortcuts import render, redirect
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
@@ -44,6 +45,11 @@ class TaskList(LoginRequiredMixin, ListView):
         context = super().get_context_data(**kwargs)
         context['tasks'] = context['tasks'].filter(user=self.request.user)
         context['count'] = context['tasks'].filter(complete=False)
+
+        search_input = self.request.GET.get('search-are') or ''
+        if search_input:
+            context['tasks'] = context['tasks'].filter(
+                title_icontains=search_input)
         return context
 
 class TaskDetail(LoginRequiredMixin, DetailView):
