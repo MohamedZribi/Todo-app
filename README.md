@@ -1,3 +1,3 @@
 # Todo-app
 
-This is a simple ToDo app developed with Django. 
+This is a simple ToDo web app developed with Django. 
