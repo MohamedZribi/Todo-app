@@ -1,3 +1,6 @@
+# virtual environment
+todoapp_venv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -8,7 +11,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-todoapp_venv
+
 build/
 develop-eggs/
 dist/
